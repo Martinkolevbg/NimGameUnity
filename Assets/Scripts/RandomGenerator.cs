@@ -8,6 +8,8 @@ public class RandomGenerator : MonoBehaviour
 
     System.Random rand;
 
+    GameObject[] coins;
+
     int numberOfCoins;
 
     public int minCoins = 11;
@@ -22,7 +24,7 @@ public class RandomGenerator : MonoBehaviour
         float zPos;
 
         numberOfCoins = rand.Next (maxCoins - minCoins) + minCoins;
-      
+        coins = new GameObject[numberOfCoins];
         Debug.Log ("Instantiating " + numberOfCoins + " coins");
 
         for(int i= 0; i < numberOfCoins; i++)
@@ -31,7 +33,7 @@ public class RandomGenerator : MonoBehaviour
             yPos = rand.Next(5) + 2f;
             zPos = rand.Next(100) / 100f;
 
-            Instantiate (coin, new Vector3(0,1,0), Random.rotation);
+            coins[i]  = Instantiate (coin, new Vector3(0,1,0), Random.rotation) as GameObject;
         }
     }
 
@@ -40,4 +42,17 @@ public class RandomGenerator : MonoBehaviour
         
     }
     public int GetRemainingCoins() => numberOfCoins;
+
+    public void RemoveCoinObjects(int numberOfCoinsToTake)
+    {
+        for(int i =0 ; numberOfCoinsToTake > 0 ;i++){
+
+            if (coins != null){
+                Destroy(coins[i]);
+                numberOfCoinsToTake --;
+                numberOfCoins --;
+                
+            }
+        }
+    }
 }
