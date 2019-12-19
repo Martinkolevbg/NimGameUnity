@@ -134,6 +134,7 @@ public class GameManager : MonoBehaviour
         yield return ChangeDisplayMassage("Removing " + numberOfCoins + " Coin/s.", 1.5f); 
         randomGenerator.RemoveCoinObjects (numberOfCoins);
         SetRemainingMatchesText();
+        currentGameState = GameState.ComputersTurn;
     }
 
     void SetRemainingMatchesText()
