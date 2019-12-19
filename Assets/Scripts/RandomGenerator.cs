@@ -8,6 +8,8 @@ public class RandomGenerator : MonoBehaviour
 
     System.Random rand;
 
+    int numberOfCoins;
+
     public int minCoins = 11;
     public int maxCoins = 39;
 
@@ -19,7 +21,7 @@ public class RandomGenerator : MonoBehaviour
         float yPos;
         float zPos;
 
-        int numberOfCoins = rand.Next (maxCoins - minCoins) + minCoins;
+        numberOfCoins = rand.Next (maxCoins - minCoins) + minCoins;
       
         Debug.Log ("Instantiating " + numberOfCoins + " coins");
 
@@ -28,7 +30,7 @@ public class RandomGenerator : MonoBehaviour
             xPos = rand.Next(100) / 100f;
             yPos = rand.Next(5) + 2f;
             zPos = rand.Next(100) / 100f;
-            
+
             Instantiate (coin, new Vector3(0,1,0), Random.rotation);
         }
     }
@@ -37,4 +39,5 @@ public class RandomGenerator : MonoBehaviour
     {
         
     }
+    public int GetRemainingCoins() => numberOfCoins;
 }
