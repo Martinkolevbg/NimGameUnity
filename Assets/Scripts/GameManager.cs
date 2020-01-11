@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         newGameButton.onClick.AddListener(() => { SceneManager.LoadScene(SceneManager.GetActiveScene().name); });
 
         randomGenerator = GetComponent<RandomGenerator>();
-        SetRemainingMatchesText();
+        SetRemainingCoinsText();
         currentGameState = GameState.New;
     }
 
@@ -96,11 +96,12 @@ public class GameManager : MonoBehaviour
 
             if(nextPlayer == 0)
             {
-                yield return ChangeDisplayMassage("Computer go first", 2f);
+                yield return new WaitForSeconds(0.1f);
                 currentGameState = GameState.ComputersTurn;
             }
             else if (nextPlayer == 1){
-                yield return ChangeDisplayMassage("Player go first", 2f);
+                //yield return ChangeDisplayMassage("Player go first", 2f);
+                yield return new WaitForSeconds(0.1f);
                 currentGameState = GameState.PlayersTurn;
             }
             else{
@@ -146,9 +147,11 @@ public class GameManager : MonoBehaviour
         button1.gameObject.SetActive(false);
         button2.gameObject.SetActive(false);
         button3.gameObject.SetActive(false);
-        yield return ChangeDisplayMassage("Removing " + numberOfCoins + " Coin/s.", 1.5f); 
+        yield return ChangeDisplayMassage("Removing " + numberOfCoins + " Coin/s.", 1.5f);
+       // Debug.Log("removing");
         randomGenerator.RemoveCoinObjects (numberOfCoins);
-        SetRemainingMatchesText();
+        //Debug.Log("Done");
+        SetRemainingCoinsText();
         currentGameState = GameState.ComputersTurn;
     }
 
@@ -161,9 +164,11 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
             int numberOfCoinsToTake = NimHelper.CalculateCoinsToRemove(randomGenerator.GetRemainingCoins());
             yield return ChangeDisplayMassage("Computers takes " + numberOfCoinsToTake + " coin/s ", 2f);
+           // Debug.Log("removing");
             randomGenerator.RemoveCoinObjects(numberOfCoinsToTake);
+           // Debug.Log("removed!!!!!");
             yield return new WaitForSeconds(1f);
-            SetRemainingMatchesText();
+            SetRemainingCoinsText();
             currentGameState = GameState.PlayersTurn;
         }
     }
@@ -173,7 +178,7 @@ public class GameManager : MonoBehaviour
         newGameButton.gameObject.SetActive(true);
     }
 
-    void SetRemainingMatchesText()
+    void SetRemainingCoinsText()
     {
         coinsRemainingMassage.text = "Coins Remaining : " + randomGenerator.GetRemainingCoins();
     }  

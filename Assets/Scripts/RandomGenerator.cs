@@ -51,6 +51,7 @@ public class RandomGenerator : MonoBehaviour
                 Destroy(coins[i]);
                 numberOfCoinsToTake --;
                 numberOfCoins --;
+                Debug.Log("i removed");
                 
             }
         }
