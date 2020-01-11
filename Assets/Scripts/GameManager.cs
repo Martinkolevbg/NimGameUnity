@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
     public Button button1;
     public Button button2;
     public Button button3;
+    public Button newGameButton;
     public Text questionMassage;
 
     // Game State machine
@@ -19,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     // States
     enum GameState 
-    { Busy , New, PlayersTurn , ComputersTurn, PickFirstPlayer,PlayerLost }
+    { Busy , New, PlayersTurn , ComputersTurn, PickFirstPlayer,PlayerLost,ComputerLost }
 
 
 
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
         button1.onClick.AddListener(() =>{ StartCoroutine(RemoveCoins(1)); });
         button2.onClick.AddListener(() =>{ StartCoroutine(RemoveCoins(2)); });
         button3.onClick.AddListener(() =>{ StartCoroutine(RemoveCoins(3)); });
+        newGameButton.onClick.AddListener(() => { SceneManager.LoadScene(SceneManager.GetActiveScene().name); });
 
         randomGenerator = GetComponent<RandomGenerator>();
         SetRemainingMatchesText();
@@ -49,6 +52,18 @@ public class GameManager : MonoBehaviour
             case GameState.PlayersTurn:
                 currentGameState = GameState.Busy;
                 StartCoroutine (ShowPlayerOptions());
+                break;
+            case GameState.ComputersTurn:
+                currentGameState=GameState.Busy;
+                StartCoroutine (ComputersTurn());
+                break;
+            case GameState.PlayerLost:
+                currentGameState = GameState.Busy;
+                StartCoroutine(ShowGameOver("You Lost!"));
+                break;
+            case GameState.ComputerLost:
+                currentGameState = GameState.Busy;
+                StartCoroutine(ShowGameOver("You Won"));
                 break;
         }
     }
@@ -99,7 +114,7 @@ public class GameManager : MonoBehaviour
 
         IEnumerator ShowPlayerOptions()
         {
-            yield return new WaitForSeconds(0.1f);
+            yield return ChangeDisplayMassage("Your turn !" , 3f);
             if(randomGenerator.GetRemainingCoins() == 1)
             {
                 currentGameState = GameState.PlayerLost;
@@ -135,6 +150,27 @@ public class GameManager : MonoBehaviour
         randomGenerator.RemoveCoinObjects (numberOfCoins);
         SetRemainingMatchesText();
         currentGameState = GameState.ComputersTurn;
+    }
+
+    IEnumerator ComputersTurn(){
+        if(randomGenerator.GetRemainingCoins() == 1){
+            currentGameState = GameState.ComputerLost;
+        }
+        else{
+
+            yield return new WaitForSeconds(1f);
+            int numberOfCoinsToTake = NimHelper.CalculateCoinsToRemove(randomGenerator.GetRemainingCoins());
+            yield return ChangeDisplayMassage("Computers takes " + numberOfCoinsToTake + " coin/s ", 2f);
+            randomGenerator.RemoveCoinObjects(numberOfCoinsToTake);
+            yield return new WaitForSeconds(1f);
+            SetRemainingMatchesText();
+            currentGameState = GameState.PlayersTurn;
+        }
+    }
+
+    IEnumerator ShowGameOver(string massage){
+        yield return ChangeDisplayMassage(massage,3f);
+        newGameButton.gameObject.SetActive(true);
     }
 
     void SetRemainingMatchesText()

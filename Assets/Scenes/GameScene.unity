@@ -360,6 +360,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4553361192431582, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.941
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553361192431582, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.363
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553361192431582, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553361192431582, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6564721
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553361192431582, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.2627632
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553361192431582, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.26276314
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553361192431582, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.656472
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553361192431582, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553361192431582, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 43.629
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
 --- !u!1 &432875949
@@ -486,12 +522,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 726315411}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &532010406 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827,
-    type: 3}
-  m_PrefabInstance: {fileID: 1567960215}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &538169911
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,55 +601,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538169911}
   m_CullTransparentMesh: 0
---- !u!1001 &580136871
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1307329600}
-    m_Modifications:
-    - target: {fileID: 1833663515793174, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_Name
-      value: Summer Open-Air Chair Plastic (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.364417
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.17542458
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.9740056
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.86602443
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5000018
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 120.00001
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
 --- !u!1 &634968395
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,7 +679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.43341726
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
       propertyPath: m_LocalPosition.y
@@ -706,7 +687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.9340056
+      value: -0.882
       objectReference: {fileID: 0}
     - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
       propertyPath: m_LocalRotation.x
@@ -726,7 +707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1150,10 +1131,8 @@ Transform:
   m_Children:
   - {fileID: 1780424154}
   - {fileID: 1001807099}
-  - {fileID: 532010406}
-  - {fileID: 1789276971}
   - {fileID: 490399537}
-  - {fileID: 1705484716}
+  - {fileID: 1993449355}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1300,100 +1279,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448930272}
   m_CullTransparentMesh: 0
---- !u!1001 &1567960215
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1307329600}
-    m_Modifications:
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.4494172
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.17542458
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.3470056
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.13052596
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99144495
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 15.000001
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
---- !u!1001 &1658034147
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1307329600}
-    m_Modifications:
-    - target: {fileID: 1833663515793174, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_Name
-      value: Summer Open-Air Chair Plastic (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.2774173
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.17542458
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.4730058
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.9914453
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.13052315
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -194.99998
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
 --- !u!1 &1663259341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,12 +1386,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aae5a96c395ace447af3e34010ab47e5, type: 3}
---- !u!4 &1705484716 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827,
-    type: 3}
-  m_PrefabInstance: {fileID: 1658034147}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1774833348
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,12 +1534,6 @@ Transform:
   m_Father: {fileID: 1307329600}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 165.956, y: 54.132996, z: 4.6119843}
---- !u!4 &1789276971 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827,
-    type: 3}
-  m_PrefabInstance: {fileID: 580136871}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1818166801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,6 +1757,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1993449355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827,
+    type: 3}
+  m_PrefabInstance: {fileID: 2083197019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2024859139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,3 +1864,52 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1001 &2083197019
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1307329600}
+    m_Modifications:
+    - target: {fileID: 1833663515793174, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_Name
+      value: Summer Open-Air Chair Plastic (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.69972014
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17542458
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.057076
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.93445826
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.35607284
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899508235444726, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -138.28201
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a99b124aefd15f64e89ef63b6b1f4827, type: 3}
