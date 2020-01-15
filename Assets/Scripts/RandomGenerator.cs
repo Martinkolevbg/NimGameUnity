@@ -25,7 +25,7 @@ public class RandomGenerator : MonoBehaviour
 
         numberOfCoins = rand.Next (maxCoins - minCoins) + minCoins;
         coins = new GameObject[numberOfCoins];
-        Debug.Log ("Instantiating " + numberOfCoins + " coins");
+       // Debug.Log ("Instantiating " + numberOfCoins + " coins");
 
         for(int i= 0; i < numberOfCoins; i++)
         {
@@ -47,11 +47,11 @@ public class RandomGenerator : MonoBehaviour
     {
         for(int i =0 ; numberOfCoinsToTake > 0 ;i++){
 
-            if (coins != null){
+            if (coins[i] != null){
                 Destroy(coins[i]);
                 numberOfCoinsToTake --;
                 numberOfCoins --;
-                Debug.Log("i removed");
+                //Debug.Log("i removed");
                 
             }
         }

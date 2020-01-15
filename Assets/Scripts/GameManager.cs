@@ -115,7 +115,7 @@ public class GameManager : MonoBehaviour
 
         IEnumerator ShowPlayerOptions()
         {
-            yield return ChangeDisplayMassage("Your turn !" , 3f);
+            yield return ChangeDisplayMassage("Your turn !" , 2f);
             if(randomGenerator.GetRemainingCoins() == 1)
             {
                 currentGameState = GameState.PlayerLost;
@@ -161,9 +161,9 @@ public class GameManager : MonoBehaviour
         }
         else{
 
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.5f);
             int numberOfCoinsToTake = NimHelper.CalculateCoinsToRemove(randomGenerator.GetRemainingCoins());
-            yield return ChangeDisplayMassage("Computers takes " + numberOfCoinsToTake + " coin/s ", 2f);
+            yield return ChangeDisplayMassage("Computers takes " + numberOfCoinsToTake + " coin/s ", 1.5f);
            // Debug.Log("removing");
             randomGenerator.RemoveCoinObjects(numberOfCoinsToTake);
            // Debug.Log("removed!!!!!");
@@ -174,7 +174,7 @@ public class GameManager : MonoBehaviour
     }
 
     IEnumerator ShowGameOver(string massage){
-        yield return ChangeDisplayMassage(massage,3f);
+        yield return ChangeDisplayMassage( massage ,4f );
         newGameButton.gameObject.SetActive(true);
     }
 
